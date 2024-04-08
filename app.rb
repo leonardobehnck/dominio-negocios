@@ -1,4 +1,4 @@
-require_relative 'loja.rb'
+require_relative 'mercado.rb'
 require_relative 'produto.rb'
 
 produto = Produto.new
@@ -7,4 +7,4 @@ produto = Produto.new
   puts 'Digite o valor do produto:'
   produto.preco = gets.chomp
 
-  Loja.new(produto.nome, produto.preco).comprar
+  Mercado.new(produto.nome, produto.preco).comprar
